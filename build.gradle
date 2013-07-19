@@ -11,7 +11,7 @@ buildscript {
 configure(allprojects) {
     group = 'org.springframework.mobile'
 
-    ext.springVersion     = "3.2.3.RELEASE"
+    ext.springVersion     = "4.0.0.BUILD-SNAPSHOT"
     ext.junitVersion      = "4.11"
     ext.easymockVersion   = "2.5.2"
     ext.hamcrestVersion   = "1.3"
@@ -59,8 +59,8 @@ configure(allprojects) {
 
     test.systemProperty("java.awt.headless", "true")
 
-    repositories { 
-        maven { url "http://repo.springsource.org/libs-release" } 
+    repositories {
+        maven { url "http://repo.springsource.org/libs-snapshot" }
     }
 
     dependencies {
